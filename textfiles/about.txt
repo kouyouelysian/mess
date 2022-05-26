@@ -1,0 +1,15 @@
+-----------------------------------------------
+                    MESS
+(multifunctional extendable sequencer solution)
+-----------------------------------------------
+
+lightweight and extendable automated solution
+mostly aimed at file manipulation. inspired by
+CISCO networking gear command line interface
+language, made for nerds.
+
+authors:
+~ Aubery Lis (sequencer, core actions)
+~ Giorgi Okroshidze (cide review & debug, test)
+
+astrossoundhell.neocities.org

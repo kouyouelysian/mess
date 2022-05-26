@@ -1,0 +1,25 @@
+Further help:
+
+help status
+help actions
+help sequencer
+help extensions
+
+CLI commands:
+
+about -- show about
+actions -- see available actions
+c -- clear screen
+catchfails -- toggle if the program stops or keeps on if an action fails
+exit -- quit the sequence editor
+help -- display (this) help message
+list -- display current sequence
+no <num1 num2...> -- removes sequence lines under provided numbers 
+p -- display current status working path
+rescan -- check the actions folder for new actions
+run -- run the currently stored sequence
+status -- display program status
+s -- display current status selected filess
+verbose -- toggle verbose display
+<actionname> -- setup and run this one action right now
+<actionname>? -- read help about the action
