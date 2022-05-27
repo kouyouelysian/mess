@@ -77,7 +77,7 @@ def prepare_params(status):
 			days[1] = 29 # the cool thing february does once in a while
 
 		day = helper.get_int_range(1, days[month-1])
-		value = date(year, month, day)
+		value = date(year, month, day).isoformat()
 
 
 
@@ -134,7 +134,7 @@ def execute(params, status, v=False):
 
 	# select by creation date
 	elif (params['condition']=='cdate_earlier' or params['condition']=='cdate_later'):
-		targetdate = params['value']
+		targetdate = date.fromisoformat(params['value'])
 		helper.v(v, "target date "+str(targetdate))
 		for f in all_files:
 			filedate = getctime(join(status.path, f))
@@ -149,7 +149,7 @@ def execute(params, status, v=False):
 
 	# select by modification date
 	elif (params['condition']=='mdate_earlier' or params['condition']=='mdate_later'):
-		targetdate = params['value']
+		targetdate = date.fromisoformat(params['value'])
 		helper.v(v, "target date "+str(targetdate))
 		for f in all_files:
 			filedate = getmtime(join(status.path, f))
